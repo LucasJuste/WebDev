@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+        <style>ul{background-color: rgb(240, 252, 174) ;}  </style>
+    </head>     
+    <body>
+        <main>
+            <h1>Students</h1>
+            <p class="long-text">
+                La société Ricard est une société anonyme française fondée le 17 juillet 1932 à Marseille par Paul Ricard. Elle appartient aujourd'hui au groupe Pernod Ricard et produit le pastis Ricard, boisson à base d'anis et de réglisse. 
+            </p>
+            <ul>
+            <% students.forEach(function(student) { %>
+                <li><%= student.name %> | <%= student.school %> </li>
+                <%})%>   
+            </ul>
+        </main>
+    </body>
+</html>
+
